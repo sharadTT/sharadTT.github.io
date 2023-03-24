@@ -1,65 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="property.css">
-
     <style>
-        .reveal {
-            transform: translateY(250px);
-            opacity: 0;
-            transition: 2s all ease;
+        .skill-progress-bar-Container {
+            display: grid;
+            grid-template-columns: auto auto;
         }
 
-        .reveal.active {
-            transform: translateY(0);
-            opacity: 1;
+        .details {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
         }
-    </style>
 
-</head>
+        .bar {
+            position: relative;
+            border: 2px solid #0d96e0;
+            border-radius: 20px;
+        }
 
+        .bar div {
+            position: relative;
+            width: 0;
+            height: 9px;
+            border-radius: 10px;
+            background-color: #0d96e0;
+        }
 
-<body>
-    <section style="display: flex; height: 100vh;">
-        <h1>Scroll Down to Reveal Elements &#8595;</h1>
-    </section>
+        .skill {
+            margin-left: 2%;
+            margin-right: 2%;
+        }
 
-    <div class="aboutSection reveal" style="background: #000;">
-        <p class="about">
-            About
-        </p>
+        #html-bar {
+            animation: html-fill 2s forwards;
+        }
 
-        <p class="normal-text">
-            An MS student at the New York University's Tandon School of
-            Engineering with a major in Computer Engineering. Prior to this,
-            I worked for around 3 years at KPIT Technologies, Pune. I am currently
-            seeking internship opportunities for summer 2023. I have experience in
-            software development with a specialization in vehicle IT services.
-        </p>
-    </div>
-
-    
-
-    <script>
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                } else {
-                    reveals[i].classList.remove("active");
-                }
+        @keyframes html-fill {
+            100% {
+                width: 90%;
             }
         }
 
-        window.addEventListener("scroll", reveal);
-    </script>
+        #css-bar {
+            animation: css-fill 2s forwards;
+        }
+
+        @keyframes css-fill {
+            100% {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="skill-progress-bar-Container">
+        <div class="skill">
+            <div class="details">
+                <span>HTML</span>
+                <span>90%</span>
+            </div>
+            <div class="bar">
+                <div id="html-bar"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="details">
+                <span>CSS</span>
+                <span>80%</span>
+            </div>
+            <div class="bar">
+                <div id="css-bar"></div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 
 </html>

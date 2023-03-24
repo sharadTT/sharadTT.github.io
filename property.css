@@ -1,6 +1,24 @@
 p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #13181D;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: rgb(57, 107, 199);
+    width: 0%;
+  }
 
 .reveal {
     transform: translateY(250px);
@@ -9,6 +27,17 @@ p {
 }
 
 .reveal.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal-logo {
+    transform: translateY(250px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal-logo.show {
     transform: translateY(0);
     opacity: 1;
 }
@@ -183,6 +212,160 @@ p {
     margin-top: 5px;
     margin-bottom: 5px;
     font-weight: bold;
+}
+
+.skillSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.skillSectionHeading {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    letter-spacing: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.skillSectionText {
+    font-size: 20px;
+    color: rgb(160, 176, 179);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.skill-progress-bar-Container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.bar {
+    position: relative;
+    border: 2px solid rgb(57, 107, 199);
+    border-radius: 20px;
+}
+
+.bar div {
+    position: relative;
+    width: inherit;
+    height: 9px;
+    border-radius: 10px;
+    background-color: rgb(57, 107, 199);
+}
+
+.skill {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#html-bar {
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill {
+    100% {
+        width: 75%;
+    }
+}
+
+#css-bar {
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill {
+    100% {
+        width: 70%;
+    }
+}
+
+#python-bar {
+    animation: python-fill 2s forwards;
+}
+@keyframes python-fill {
+    100% {
+        width: 80%;
+    }
+}
+
+#otx-bar {
+    animation: otx-fill 2s forwards;
+}
+@keyframes otx-fill {
+    100% {
+        width: 90%;
+    }
+}
+
+#c-cpp-bar {
+    animation: c-cpp-fill 2s forwards;
+}
+@keyframes c-cpp-fill {
+    100% {
+        width: 75%;
+    }
+}
+
+#github-bar {
+    animation: github-fill 2s forwards;
+}
+@keyframes github-fill {
+    100% {
+        width: 80%;
+    }
+}
+
+#jira-bar {
+    animation: jira-fill 2s forwards;
+}
+
+@keyframes jira-fill {
+    100% {
+        width: 90%;
+    }
+}
+
+#vehicle-diagnostics-bar {
+    animation: vehicle-diagnostics-fill 2s forwards;
+}
+@keyframes vehicle-diagnostics-fill {
+    100% {
+        width: 80%;
+    }
+}
+
+#can-bar {
+    animation: can-fill 2s forwards;
+}
+
+@keyframes can-fill {
+    100% {
+        width: 80%;
+    }
+}
+
+#eclipse-bar {
+    animation: eclipse-fill 2s forwards;
+}
+@keyframes eclipse-fill {
+    100% {
+        width: 90%;
+    }
 }
 
 @keyframes fadeIn {

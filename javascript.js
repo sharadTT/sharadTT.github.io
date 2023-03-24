@@ -1,7 +1,6 @@
 //Toggle wlecome every three seconds
 let x = 0
 setInterval(toggleWelcome, 3000);
-
 function toggleWelcome() {
     if(x == 0)
     {
@@ -21,7 +20,6 @@ function toggleWelcome() {
 //Slide controller for welcome
 let slideIndex = 1;
 showSlides(slideIndex);
-
 // Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -31,7 +29,6 @@ function plusSlides(n) {
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("slides");
@@ -49,7 +46,7 @@ function showSlides(n) {
 }
 
 
-//Fade in on scroll
+//Fade in on scroll - text
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
 
@@ -66,5 +63,34 @@ function reveal() {
         }
     }
 }
-
 window.addEventListener("scroll", reveal);
+
+//Fade in on scroll - logo
+function revealLogo() {
+    var reveals = document.querySelectorAll(".reveal-logo");
+
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 20;
+        console.log(elementTop, windowHeight, elementVisible)
+
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("show");
+        } else {
+            reveals[i].classList.remove("show");
+        }
+    }
+}
+window.addEventListener("scroll", revealLogo);
+
+//Progress bar
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {progressBar()};
+
+function progressBar() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
