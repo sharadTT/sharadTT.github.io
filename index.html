@@ -4,6 +4,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>
     Sharad Tembhurne
   </title>
@@ -13,13 +14,11 @@
 
   <link rel="stylesheet" href="property.css">
 
-  <style>
-    .icon-img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-    }
-  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init('vuhSAhMXGDu6PCE9D')
+  </script>
 </head>
 
 <body bgcolor="#13181D">
@@ -67,7 +66,7 @@
       Engineering with a major in Computer Engineering. Prior to this,
       I worked for around 3 years at KPIT Technologies, Pune. I am currently
       seeking internship opportunities for summer 2023. I have experience in
-      software development with a specialization in vehicle IT services.
+      software development, with a specialization in vehicle IT services, and frontend.
 
       <br>
       <br>
@@ -299,12 +298,32 @@
     </div>
   </div>
 
-  <button class="rounded-button">
-    Submit
-  </button>
+  <div class="feedbackSection">
+    <p class="feedbackSectionHeading">Say Hi!&#128075;&#127996</p>
+    <div class="inputBoxes">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="text" id="email" placeholder="Email" required />
+      <textarea placeholder="Message" id="message" required></textarea>
+    </div>
+    <button class="rounded-button" onclick="sendMail()">
+      <p>Send</p>
+    </button>
 
+
+
+    <div class="credits">
+
+      <a href="https://www.linkedin.com/in/sharad-tembhurne/" target="_blank"><img class="logo"
+          src="images/icon-linkedin.png"></a>
+      <a href="https://www.instagram.com/chicken._.biryani/" target="_blank"><img class="logo"
+          src="images/icon-instagram.png"></a>
+      <a href="https://github.com/sharadTT/" target="_blank"><img class="logo" src="images/icon-github.png"></a>
+      <a href="https://www.facebook.com/sharad97/" target="_blank"><img class="logo" src="images/icon-facebook.png"></a>
+      <a href="mailto:sharadtembhurne97@gmail.com" target="_blank"><img class="logo" src="images/icon-gmail.png"></a>
+      <p>Made by Sharad Tembhurne</p>
+    </div>
+  </div>
   <script src="javascript.js"></script>
-
 </body>
 
 </html>

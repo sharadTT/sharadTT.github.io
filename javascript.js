@@ -2,19 +2,17 @@
 let x = 0
 setInterval(toggleWelcome, 3000);
 function toggleWelcome() {
-    if(x == 0)
-    {
+    if (x == 0) {
         document.getElementById("first").style.display = "block";
         document.getElementById("second").style.display = "none";
         x = 1
     }
-    else
-    {
+    else {
         document.getElementById("first").style.display = "none";
         document.getElementById("second").style.display = "block";
         x = 0
     }
-  }
+}
 
 
 //Slide controller for welcome
@@ -86,13 +84,13 @@ window.addEventListener("scroll", revealLogo);
 
 //Progress bar
 // When the user scrolls the page, execute myFunction 
-window.onscroll = function() {progressBar()};
+window.onscroll = function () { progressBar() };
 
 function progressBar() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
 }
 
 //Jobs job-container
@@ -116,3 +114,29 @@ function openTab(evt, tabNumber) {
     document.getElementById(tabNumber).style.display = "inline";
     evt.currentTarget.className += " active";
 }
+
+
+//Send email
+function sendMail() {
+
+    console.log("Button pressed");
+    var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+    };
+
+    const serviceID = "service_gchtkni";
+    const templateID = "template_v67he3l";
+
+    emailjs.send(serviceID, templateID, params)
+        .then(
+            res => {
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("message").value = "";
+                alert("Message sent successfully!")
+            }
+        )
+}
+
