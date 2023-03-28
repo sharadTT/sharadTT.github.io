@@ -659,6 +659,9 @@ textarea {
     margin-top: 0;
 }
 
+.visit-counter {
+    color: rgb(160, 176, 179);
+}
 @keyframes fadeIn {
     0% {
         opacity: 0;
