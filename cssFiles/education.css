@@ -1,0 +1,62 @@
+.educationSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 5%;
+}
+
+.educationSectionHeading {
+    font-size: 140px;
+    color: rgb(48, 51, 52);
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    letter-spacing: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Style the buttons that are used to open and close the accordion jobDescription */
+.education-container {
+    /* background-color: rgb(51, 82, 138);; */
+    /* padding: 18px; */
+    width: 50%;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: rgb(160, 176, 179);
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+    text-align: left;
+    color: #fff;
+    display: inline;
+}
+
+.education-title {
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    /* font-weight: bold; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.education-description {
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    /* font-weight: bold; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.education-duration {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(160, 176, 179);
+}

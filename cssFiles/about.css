@@ -1,0 +1,41 @@
+.aboutSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: min(100vw, 100vh);
+}
+
+
+.about {
+    font-size: 12.5vw;
+    color: rgb(48, 51, 52);
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    letter-spacing: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.normal-text {
+    font-size: max(1.5vh, 1.5vw);
+    color: white;
+    position: absolute;
+    border-width: 5px;
+    border-color: #fff;
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    width: 50%;
+}
+
+.logo {
+    height: max(3vh, 5vh);
+    width: max(3vh, 5vh);
+    margin-left: 5px;
+    margin-right: 5px;
+  }
