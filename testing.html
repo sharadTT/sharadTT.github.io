@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 
-
 <html>
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>
-    Sharad Tembhurne test
+    Sharad Tembhurne
   </title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="property.css">
+  <!-- <link rel="stylesheet" href="cssFiles/style.css"> -->
+  <link rel="stylesheet" href="cssFiles/header.css">
+  <link rel="stylesheet" href="cssFiles/welcome.css">
+  <link rel="stylesheet" href="cssFiles/about.css">
+  <link rel="stylesheet" href="animations/animations.css">
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
   <script type="text/javascript">
     emailjs.init('vuhSAhMXGDu6PCE9D')
   </script>
-
-  <style>
-    
-  </style>
 </head>
 
 <body bgcolor="#13181D">
@@ -60,12 +59,12 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
 
-  <div class="aboutSection">
+   <div class="aboutSection">
     <p class="about">
       About
     </p>
 
-    <p class="normal-text reveal">
+    <p class="about-text reveal">
       An MS student at the New York University's Tandon School of
       Engineering with a major in Computer Engineering. Prior to this,
       I worked for around 3 years at KPIT Technologies, Pune. I am currently
@@ -89,7 +88,7 @@
 
     </p>
   </div>
-
+<!--
   <div class="experienceSection">
     <p class="experienceSectionHeading">
       experience
@@ -189,9 +188,18 @@
   </div>
 
   <div class="projectSection" >
-    <p class="educationSectionHeading">
+    <p class="projectSectionHeading">
       projects
     </p>
+    <div class="project-container reveal" style="margin-left: 12%;">
+      <p class="project-description">Source code to the current portfolio webpage. This is developed using
+        HTML, CSS, and, JavaScript.<br><br><i class="fa fa-external-link-square"></i>
+        <a href="https://github.com/sharadTT/sharadTT.github.io" style="text-decoration: none; color: #fff;" target="_blank">GitHub</a>
+      </p>
+      <p class="project-title" style="text-align: left;">Personal Portfolio</p>
+    </div>
+
+
     <div class="project-container reveal" style="margin-right: 12%;">
       <p class="project-title" style="text-align: right;">ASIC for CNN</p>
       <p class="project-description">Designing an application-specific integrated circuit that implements
@@ -199,7 +207,6 @@
         <a href="files/ASIC_CNN_ProjectReport.pdf" style="text-decoration: none; color: #fff;" target="_blank">Project
           Report</a>
       </p>
-
     </div>
 
     <div class="project-container reveal" style="margin-left: 12%;">
@@ -253,7 +260,7 @@
           <p>70%</p>
         </div>
         <div class="bar">
-          <div id="css-bar"></div>
+          <div id="javascript-bar"></div>
         </div>
       </div>
 
@@ -349,7 +356,8 @@
       <a href="mailto:sharadtembhurne97@gmail.com" target="_blank"><img class="logo" src="images/icon-gmail.png"></a>
       <p>Made by Sharad Tembhurne</p>
     </div>
-  </div>
+  </div> -->
+
   <script src="javascript.js"></script>
 </body>
 

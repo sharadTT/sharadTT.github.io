@@ -51,8 +51,8 @@ function reveal() {
     for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 150;
-        console.log(elementTop, windowHeight, elementVisible)
+        var elementVisible = 50;
+        // console.log(elementTop, windowHeight, elementVisible)
 
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("show");
@@ -70,8 +70,8 @@ function revealLogo() {
     for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 20;
-        console.log(elementTop, windowHeight, elementVisible)
+        var elementVisible = 5;
+        // console.log(elementTop, windowHeight, elementVisible)
 
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("show");
@@ -91,6 +91,7 @@ function progressBar() {
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
+    console.log(winScroll)
 }
 
 //Jobs job-container
