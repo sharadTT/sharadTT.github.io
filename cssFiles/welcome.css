@@ -6,7 +6,6 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    /* background-color: black; */
 }
 
 .slides {
@@ -24,13 +23,13 @@
     margin-top: 5px;
     margin-bottom: 5px;
     font-weight: bold;
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
 .welcome-text-bg {
     animation: fadeIn 2s;
-    font-size: 1.5vw;
-    color: rgb(160, 176, 179);
+    font-size: 2vw;
+    color: white;
     text-align: center;
     text-transform: uppercase;
     word-spacing: 2px;
@@ -80,7 +79,7 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) and (max-height: 800px) {
     .welcome-text {
         animation: fadeIn 2s;
         font-size: 7vw;
@@ -97,8 +96,7 @@
 
     .welcome-text-bg {
         animation: fadeIn 2s;
-        font-size: 3vw;
-        color: rgb(160, 176, 179);
+        font-size: 3.5vw;
         text-align: center;
         text-transform: uppercase;
         /* word-spacing: 2px; */

@@ -9,27 +9,28 @@
 }
 
 
-.about {
+.about-heading {
     font-size: 12.5vw;
     color: rgb(48, 51, 52);
     text-align: center;
+    display: block;
     text-transform: uppercase;
     word-spacing: 2px;
     letter-spacing: 20px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 20rem;
     font-weight: bold;
 }
 
 .about-text {
-    font-size: max(1.5vh, 1.5vw);
+    font-size: 1.5vw;
     color: white;
     position: absolute;
     border-width: 5px;
     border-color: #fff;
     text-align: center;
-    margin-top: 250px;
-    margin-bottom: 5px;
+    /* margin-top: 250px; */
+    margin-bottom: 5rem;
     font-weight: bold;
     width: 50%;
 }
@@ -42,27 +43,28 @@
   }
 
   @media screen and (max-width: 500px) {
-    .about {
-        font-size: 12.5vw;
+    .about-heading {
+        font-size: 15vw;
         color: rgb(48, 51, 52);
         text-align: center;
+        display: block;
         text-transform: uppercase;
         word-spacing: 2px;
         letter-spacing: 20px;
         margin-top: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 35rem;
         font-weight: bold;
     }
 
     .about-text {
-        font-size: 3vw;
+        font-size: 4vw;
         color: white;
         position: absolute;
         border-width: 5px;
         border-color: #fff;
         text-align: center;
-        margin-top: 250px;
-        margin-bottom: 5px;
+        /* margin-top: 250px; */
+        margin-bottom: 12rem;
         font-weight: bold;
         width: 70%;
         word-wrap: break-word

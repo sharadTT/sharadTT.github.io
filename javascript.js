@@ -51,7 +51,7 @@ function reveal() {
     for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 50;
+        var elementVisible = 200;
         // console.log(elementTop, windowHeight, elementVisible)
 
         if (elementTop < windowHeight - elementVisible) {
@@ -62,6 +62,24 @@ function reveal() {
     }
 }
 window.addEventListener("scroll", reveal);
+
+function revealHeading() {
+    var reveals = document.querySelectorAll(".revealHeading");
+
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 10;
+        // console.log(elementTop, windowHeight, elementVisible)
+
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("show");
+        } else {
+            reveals[i].classList.remove("show");
+        }
+    }
+}
+window.addEventListener("scroll", revealHeading);
 
 //Fade in on scroll - logo
 function revealLogo() {

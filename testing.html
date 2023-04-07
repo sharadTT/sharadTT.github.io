@@ -7,358 +7,109 @@
   <title>
     Sharad Tembhurne
   </title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" href="cssFiles/style.css"> -->
-  <link rel="stylesheet" href="cssFiles/header.css">
-  <link rel="stylesheet" href="cssFiles/welcome.css">
-  <link rel="stylesheet" href="cssFiles/about.css">
-  <link rel="stylesheet" href="animations/animations.css">
+  <style>
+    *
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    }
 
-  <script type="text/javascript">
-    emailjs.init('vuhSAhMXGDu6PCE9D')
-  </script>
+    body {
+      min-height: 100vh;
+      background: #13181D;
+    }
+
+    .bg-animation-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .bubbles { 
+      position: relative;
+      display: flex;
+    }
+    .bubbles span {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      background: #396bc7;
+      margin: 0 4px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 10px #396bc744,
+      0 0 50px #396bc7,
+      0 0 100px #396bc7;
+      animation: flowUp 15s linear infinite;
+      animation-duration: calc(120s / var(--i));
+    }
+
+    .bubbles span:nth-child(even) {
+      background: #ffffff;
+      box-shadow: 0 0 0 10px #ffffff44,
+      0 0 50px #ffffff,
+      0 0 100px #ffffff;
+    }
+
+    @keyframes flowUp {
+      0% {
+        transform: translateY(100vh) scale(0);
+      }
+
+      100% {
+        transform: translateY(-10vh) scale(1);
+      }
+
+    }
+  </style>
 </head>
 
-<body bgcolor="#13181D">
-
-  <div class="header">
-    <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
+<body>
+  <div class="bg-animation-container">
+    <div class="bubbles">
+      <span style="--i:11"></span>
+      <span style="--i:12"></span>
+      <span style="--i:24"></span>
+      <span style="--i:10"></span>
+      <span style="--i:14"></span>
+      <span style="--i:26"></span>
+      <span style="--i:18"></span>
+      <span style="--i:16"></span>
+      <span style="--i:19"></span>
+      <span style="--i:20"></span>
+      <span style="--i:22"></span>
+      <span style="--i:25"></span>
+      <span style="--i:18"></span>
+      <span style="--i:21"></span>
+      <span style="--i:15"></span>
+      <span style="--i:13"></span>
+      <span style="--i:26"></span>
+      <span style="--i:17"></span>
+      <span style="--i:13"></span>
+      <span style="--i:28"></span>
+      <span style="--i:11"></span>
+      <span style="--i:12"></span>
+      <span style="--i:24"></span>
+      <span style="--i:10"></span>
+      <span style="--i:14"></span>
+      <span style="--i:26"></span>
+      <span style="--i:18"></span>
+      <span style="--i:16"></span>
+      <span style="--i:19"></span>
+      <span style="--i:20"></span>
+      <span style="--i:22"></span>
+      <span style="--i:25"></span>
+      <span style="--i:18"></span>
+      <span style="--i:21"></span>
+      <span style="--i:15"></span>
+      <span style="--i:13"></span>
+      <span style="--i:26"></span>
+      <span style="--i:17"></span>
+      <span style="--i:13"></span>
+      <span style="--i:28"></span>
     </div>
   </div>
-
-  <div class="welcome">
-    <div class="slides" id="first">
-      <p class="welcome-text-bg">
-        hello! i'm
-      </p>
-      <p class="welcome-text">
-        Sharad Tembhurne
-      </p>
-    </div>
-
-    <div class="slides" id="second">
-      <p class="welcome-text-bg">
-        I am from Brooklyn, New York
-      </p>
-      <p class="welcome-text">
-        A Developer
-      </p>
-      <p class="welcome-text">
-        A Guitarist
-      </p>
-    </div>
-
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-
-   <div class="aboutSection">
-    <p class="about">
-      About
-    </p>
-
-    <p class="about-text reveal">
-      An MS student at the New York University's Tandon School of
-      Engineering with a major in Computer Engineering. Prior to this,
-      I worked for around 3 years at KPIT Technologies, Pune. I am currently
-      seeking internship opportunities for summer 2023. I have experience in
-      software development, with a specialization in vehicle IT services, and frontend.
-
-      <br>
-      <br>
-
-
-      <a href="https://www.linkedin.com/in/sharad-tembhurne/" target="_blank"><img class="logo reveal-logo"
-          src="images/icon-linkedin.png"></a>
-      <a href="https://www.instagram.com/chicken._.biryani/" target="_blank"><img class="logo reveal-logo"
-          src="images/icon-instagram.png"></a>
-      <a href="https://github.com/sharadTT/" target="_blank"><img class="logo reveal-logo"
-          src="images/icon-github.png"></a>
-      <a href="https://www.facebook.com/sharad97/" target="_blank"><img class="logo reveal-logo"
-          src="images/icon-facebook.png"></a>
-      <a href="mailto:sharadtembhurne97@gmail.com" target="_blank"><img class="logo reveal-logo"
-          src="images/icon-gmail.png"></a>
-
-    </p>
-  </div>
-<!--
-  <div class="experienceSection">
-    <p class="experienceSectionHeading">
-      experience
-    </p>
-    <p class="professional-info reveal">
-      A determined individual, taking on the exciting challenge of exploring the ever-evolving world of
-      technology by delving into the various nooks and crannies of this dynamic field, discovering the latest
-      advancements in software development and developing the skills
-      needed to thrive in this exciting and constantly evolving industry.
-    </p>
-    <div class="job-container reveal">
-      <div class="tab">
-        <button class="tablinks" onmouseover="openTab(event, 'jobOne')">
-          <p class="job-title">Software Engineer<br>KPIT Technologies</p>
-        </button>
-      </div>
-
-      <div id="jobOne" class="tabcontent">
-        <p class="job-description">Software Engineer at KPIT Technologies Limited</p>
-        <p class="job-duration">2019-2022</p>
-        <p class="job-description">India - Pune</p>
-        <br>
-        <p class="job-description">Technologies used:</p>
-        <a href="https://www.iso.org/standard/53507.html" target="_blank" style="text-decoration: none">
-          <p class="job-description">OTX: Open Test sequence eXchange</p>
-        </a>
-        <a href="https://www.iso.org/standard/41207.html" target="_blank" style="text-decoration: none">
-          <p class="job-description">ODX: Open Diagnostic Data eXchange</p>
-        </a>
-        <a href="https://www.iso.org/standard/72439.html" target="_blank" style="text-decoration: none">
-          <p class="job-description">UDS: Unified Diagnostic Services</p>
-        </a>
-        <a href="https://www.iso.org/standard/16738.html" target="_blank" style="text-decoration: none">
-          <p class="job-description">OBD II: On-Board Diagnostics</p>
-        </a>
-        <a href="https://www.java.com/en/" target="_blank" style="text-decoration: none">
-          <p class="job-description">Java</p>
-        </a>
-        <a href="https://www.python.org/" target="_blank" style="text-decoration: none">
-          <p class="job-description">Python</p>
-        </a>
-        <br>
-        <a href="https://www.kpit.com/solutions/vehicle-diagnostics/" target="_blank" style="text-decoration: none">
-          <p class="job-description">&#x1F517KPIT: Vehicle Diagnostics</p>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="educationSection">
-    <p class="educationSectionHeading">
-      education
-    </p>
-    <div class="education-container reveal">
-      <div class="tab">
-        <button class="tablinks" onmouseover="openTab(event, 'educationOne')">
-          <p class="education-title">MS in CE<br>New York University</p>
-        </button>
-        <button class="tablinks" onmouseover="openTab(event, 'educationTwo')">
-          <p class="education-title">BE in E&TC<br>MIT, Pune</p>
-        </button>
-        <button class="tablinks" onmouseover="openTab(event, 'educationThree')">
-          <p class="education-title">KVISP</p>
-        </button>
-      </div>
-
-      <div id="educationOne" class="tabcontent">
-        <p class="education-description"><a
-            href="https://engineering.nyu.edu/academics/programs/computer-engineering-ms" target="_blank"
-            style="text-decoration: none; color: #fff">NYU Tandon School of Engineering&#x1F517</a></p>
-        <p class="education-duration">August 2022 - Present<br>Brooklyn, New York</p>
-        <br>
-        <p class="education-description">Master of Science in Computer Engineering</p>
-        <p class="education-description">Coursework:<br>Data Structures & Algorithms<br>Machine Learning<br>Deep
-          Learning<br>Big Data<br>Internet Architecture and Protocols</p>
-      </div>
-
-      <div id="educationTwo" class="tabcontent">
-        <p class="education-description"><a
-            href="https://mitwpu.edu.in/programme/btech-electronics-and-communication-engineering" target="_blank"
-            style="text-decoration: none; color: #fff">Maharashtra Institute of Technology, Pune&#x1F517</a></p>
-        <p class="education-duration">July 2015 - May 2019<br>Pune, India</p>
-        <br>
-        <p class="education-description">Bachelor of Engineering in Electronics and Telecommunication</p>
-        <p class="education-description">Societies:<br>IEEE Student Branch<br>MIT Cultural<br>MIT E&TC </p>
-      </div>
-
-      <div id="educationThree" class="tabcontent">
-        <p class="education-description"><a href="https://no2nasikisp.kvs.ac.in/" target="_blank"
-            style="text-decoration: none; color: #fff">Kendriya Vidyalaya Indian Security Press&#x1F517</a></p>
-        <p class="education-duration">April 2005 - March 2019<br>Nashik, India</p>
-        <br>
-        <p class="education-description">Activities:<br>School Captain 2014-15<br>School Vice-Captain 2013-14<br>KVS
-          National Sports Meet Participant: Roller Skating</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="projectSection" >
-    <p class="projectSectionHeading">
-      projects
-    </p>
-    <div class="project-container reveal" style="margin-left: 12%;">
-      <p class="project-description">Source code to the current portfolio webpage. This is developed using
-        HTML, CSS, and, JavaScript.<br><br><i class="fa fa-external-link-square"></i>
-        <a href="https://github.com/sharadTT/sharadTT.github.io" style="text-decoration: none; color: #fff;" target="_blank">GitHub</a>
-      </p>
-      <p class="project-title" style="text-align: left;">Personal Portfolio</p>
-    </div>
-
-
-    <div class="project-container reveal" style="margin-right: 12%;">
-      <p class="project-title" style="text-align: right;">ASIC for CNN</p>
-      <p class="project-description">Designing an application-specific integrated circuit that implements
-        a convolutional neural network (CNN) to process and detect images.<br><br><i class="fa fa-external-link-square"></i>
-        <a href="files/ASIC_CNN_ProjectReport.pdf" style="text-decoration: none; color: #fff;" target="_blank">Project
-          Report</a>
-      </p>
-    </div>
-
-    <div class="project-container reveal" style="margin-left: 12%;">
-      <p class="project-description">A simple robot system with modular design for a group
-        of robots to understand their group dynamic and controlling behavior.<br><br><i class="fa fa-external-link-square"></i>
-        <a href="files/SwarmRobots_ProjectReport.pdf" style="text-decoration: none; color: #fff;" target="_blank">Project
-          Report</a></p>
-      <p class="project-title" style="text-align: left;">Swarm Robots</p>
-    </div>
-  </div>
-
-  <div class="skillSection">
-    <p class="skillSectionHeading reveal">
-      Skills
-    </p>
-
-    <div class="skill-progress-bar-Container reveal">
-      <div class="skill">
-        <div class="details">
-          <p>OTX</p>
-          <p>90%</p>
-        </div>
-        <div class="bar">
-          <div id="otx-bar"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="details">
-          <p>Vehicle Diagnostics</p>
-          <p>80%</p>
-        </div>
-        <div class="bar">
-          <div id="vehicle-diagnostics-bar"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="details">
-          <p>HTML/CSS</p>
-          <p>75%</p>
-        </div>
-        <div class="bar">
-          <div id="html-bar"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="details">
-          <p>JavaScript</p>
-          <p>70%</p>
-        </div>
-        <div class="bar">
-          <div id="javascript-bar"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="details">
-          <p>Python</p>
-          <p>80%</p>
-        </div>
-        <div class="bar">
-          <div id="python-bar"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="details">
-          <p>C/C++</p>
-          <p>75%</p>
-        </div>
-        <div class="bar">
-          <div id="c-cpp-bar"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="details">
-          <p>CAN</p>
-          <p>80%</p>
-        </div>
-        <div class="bar">
-          <div id="can-bar"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="details">
-          <p>GitHub/Git</p>
-          <p>80%</p>
-        </div>
-        <div class="bar">
-          <div id="github-bar"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="details">
-          <p>JIRA</p>
-          <p>90%</p>
-        </div>
-        <div class="bar">
-          <div id="jira-bar"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="details">
-          <p>Eclipse</p>
-          <p>90%</p>
-        </div>
-        <div class="bar">
-          <div id="eclipse-bar"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="reveal">
-      <a href="files/SharadTembhurne_Resume.pdf" style="text-decoration: none; color: #fff;" target="_blank" download>
-        <p><br><br>&#x1F517 Download Resume &#x1F517</p>
-      </a>
-    </div>
-  </div>
-
-  <div class="feedbackSection">
-    <p class="feedbackSectionHeading">Say Hi!&#128075;&#127996</p>
-    <div class="inputBoxes">
-      <input type="text" id="name" placeholder="Name" required />
-      <input type="text" id="email" placeholder="Email" required />
-      <textarea placeholder="Message" id="message" required></textarea>
-    </div>
-    <button class="rounded-button" onclick="sendMail()">
-      <p>Send</p>
-    </button>
-
-
-
-    <div class="credits">
-
-      <a href="https://www.linkedin.com/in/sharad-tembhurne/" target="_blank"><img class="logo"
-          src="images/icon-linkedin.png"></a>
-      <a href="https://www.instagram.com/chicken._.biryani/" target="_blank"><img class="logo"
-          src="images/icon-instagram.png"></a>
-      <a href="https://github.com/sharadTT/" target="_blank"><img class="logo" src="images/icon-github.png"></a>
-      <a href="https://www.facebook.com/sharad97/" target="_blank"><img class="logo" src="images/icon-facebook.png"></a>
-      <a href="mailto:sharadtembhurne97@gmail.com" target="_blank"><img class="logo" src="images/icon-gmail.png"></a>
-      <p>Made by Sharad Tembhurne</p>
-    </div>
-  </div> -->
-
-  <script src="javascript.js"></script>
 </body>
 
 </html>
