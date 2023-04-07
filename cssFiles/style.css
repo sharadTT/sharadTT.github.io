@@ -13,8 +13,8 @@ body {
     /* align-items: center; */
     /* justify-content: center; */
     background-size: 300% 300%;
-    -webkit-animation: AnimateBG 20s ease infinite;
-    animation: AnimateBG 20s ease infinite;
+    -webkit-animation: AnimateBG 8s ease infinite;
+    animation: AnimateBG 8s ease infinite;
 }
 
 @-webkit-keyframes AnimateBG {
