@@ -34,15 +34,15 @@
 .project-title {
     color: #fff;
     font-size: 2vw;
-    width: 45%;
+    width: 55%;
     border-width: 2px;
     border-color: #fff;
     margin-top: 0;
 }
 
 .project-description {
-    color: rgb(160, 176, 179);
+    color: black;
     font-size: 1vw;
-    width: 55%;     
+    width: 80%;     
     margin-top: 0;
 }
