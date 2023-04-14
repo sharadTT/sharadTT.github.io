@@ -5,6 +5,8 @@
     align-items: center;
     justify-content: center;
     height: min(100vw, 100vh);
+    scroll-snap-align: start;
+
 }
 
 .feedbackSectionHeading {
