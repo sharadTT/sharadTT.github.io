@@ -12,3 +12,4 @@ The project was built using the following technologies:
 Clone the repository to your local machine.
 Navigate to the project directory.
 Open the index.html file in your web browser.
+Or just visit https://sharadtt.github.io/
