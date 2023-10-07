@@ -43,7 +43,7 @@
     margin-right: 5px;
   }
 
-  @media screen and (max-width: 500px) {
+  @media (max-width: 768px) {
     .about-heading {
         font-size: 15vw;
         color: rgb(48, 51, 52);

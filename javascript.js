@@ -1,6 +1,11 @@
 //Toggle wlecome every three seconds
 let x = 0
-setInterval(toggleWelcome, 3000);
+if (window.innerWidth > 768) {
+    // Your JavaScript code for larger screens goes here
+    setInterval(toggleWelcome, 3000);
+    console.log("Running JavaScript on larger screens.");
+}
+
 function toggleWelcome() {
     if (x == 0) {
         document.getElementById("first").style.display = "block";
