@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a69c27fc.css",
-    "main.js": "/static/js/main.4b461123.js",
+    "main.js": "/static/js/main.a152f7d2.js",
     "static/js/872.c1e31e0d.chunk.js": "/static/js/872.c1e31e0d.chunk.js",
     "static/js/227.6eee8df1.chunk.js": "/static/js/227.6eee8df1.chunk.js",
     "static/js/526.e9bd8db4.chunk.js": "/static/js/526.e9bd8db4.chunk.js",
@@ -22,14 +22,25 @@
     "static/media/overlaybg.png": "/static/media/overlaybg.165362eea72d1614ae28.png",
     "static/media/menu.png": "/static/media/menu.7e179ab26d6d70303cd9.png",
     "static/media/DoraemonGadgets.png": "/static/media/DoraemonGadgets.13e60682e5bc5a35752c.png",
+    "static/media/jenkins.png": "/static/media/jenkins.1a73af1843b3ed5cd966.png",
     "static/media/react.png": "/static/media/react.9dad5b1345254a342de8.png",
+    "static/media/linux.png": "/static/media/linux.5f204b5f96935473b880.png",
+    "static/media/postgresql.png": "/static/media/postgresql.6a1893a3e49624af8f79.png",
+    "static/media/copilot.png": "/static/media/copilot.d3889ad00e1a3df03436.png",
+    "static/media/sql.png": "/static/media/sql.cfb792471432a25f80e8.png",
     "static/media/Sharad_Tembhurne_Resume.pdf": "/static/media/Sharad_Tembhurne_Resume.9f14b881e4d1809aa335.pdf",
     "static/media/html.png": "/static/media/html.3df2c9b81444a4f63f45.png",
+    "static/media/maven.png": "/static/media/maven.0db34e69c19803b5eea7.png",
+    "static/media/postman.png": "/static/media/postman.ea37a855443ed94afb41.png",
+    "static/media/cursor.png": "/static/media/cursor.13b8b8b9d5b161ff36bc.png",
     "static/media/python.png": "/static/media/python.152a2ab63716182faaa6.png",
     "static/media/nyu.png": "/static/media/nyu.1a10fea471b594bc32f6.png",
     "static/media/jira.png": "/static/media/jira.ad3cef99bf26c7e7ffaa.png",
+    "static/media/aws.png": "/static/media/aws.79ff3964298485493520.png",
     "static/media/java.png": "/static/media/java.53c24c01034dee885192.png",
+    "static/media/typescript.png": "/static/media/typescript.cc09c8af689684b3b2aa.png",
     "static/media/mit.jpg": "/static/media/mit.1fc538d22e50d38cdcb7.jpg",
+    "static/media/selenium.png": "/static/media/selenium.219b0520cc378968e802.png",
     "static/media/ChessInsights.png": "/static/media/ChessInsights.195852d16e85c22a5322.png",
     "static/media/css.png": "/static/media/css.5f83a3f593be7ccfc25c.png",
     "static/media/kpitUS.jpg": "/static/media/kpitUS.7227668a244a450a622a.jpg",
@@ -49,7 +60,7 @@
     "static/media/gericht.svg": "/static/media/gericht.a883e04c975247ccb445f4434240b273.svg",
     "index.html": "/index.html",
     "main.a69c27fc.css.map": "/static/css/main.a69c27fc.css.map",
-    "main.4b461123.js.map": "/static/js/main.4b461123.js.map",
+    "main.a152f7d2.js.map": "/static/js/main.a152f7d2.js.map",
     "872.c1e31e0d.chunk.js.map": "/static/js/872.c1e31e0d.chunk.js.map",
     "227.6eee8df1.chunk.js.map": "/static/js/227.6eee8df1.chunk.js.map",
     "526.e9bd8db4.chunk.js.map": "/static/js/526.e9bd8db4.chunk.js.map",
@@ -58,6 +69,6 @@
   },
   "entrypoints": [
     "static/css/main.a69c27fc.css",
-    "static/js/main.4b461123.js"
+    "static/js/main.a152f7d2.js"
   ]
 }
